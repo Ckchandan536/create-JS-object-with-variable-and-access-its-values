@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Objects</title>
+</head>
+<body>
+    <h2>JavaScript Objects</h2>
+    <p id="demo"></p>
+    <script>// Create an object:
+    // here car is an object
+    // and brand, type , model, color, is an property Name
+    const car = {
+        // The name:"values"   pairs in JavaScript objects are called properties:
+        brand:"Hyundai",type:"Verna",model:"sx",color:"white",
+    carname:function(){   //converting values into carname using .this in a function
+        return this.brand+" "+this.type+" "+this.model+"   "+this.color;
+        }
+        };
+        // Display some data from the object:
+        document.getElementById("demo").innerHTML = car.carname();
+        </script>
+        </body>
+        </html>
